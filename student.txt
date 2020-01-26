@@ -1,0 +1,4 @@
+Student name: Kevin Rincon Karl
+Student number: 618862
+Class: IT1C
+GitHub: https://github.com/sselfie/Web-Markup
