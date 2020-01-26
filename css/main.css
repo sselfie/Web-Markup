@@ -1,0 +1,75 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+	magin: 0px;
+}
+h1{
+    color: #000;
+    margin: auto;
+    font-size: 70px;
+	font-family: 'Montserrat', sans-serif;
+}
+p{
+	font-family: 'Courier Prime', monospace;
+
+}
+.menu{
+  background-color: #2d777b;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .12), 0 1px 2px 0 rgba(0, 0, 0, .24);
+}
+.menu_ul{
+  display: flex;  
+  text-align: center;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style: none;  
+}
+.menuli{
+  flex-grow: 1;
+  font-family: 'Montserrat', sans-serif;
+
+}
+.menu a{
+  padding: 32px 24px;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+  will-change: color;
+  transition: color .25s ease-out;  
+  display: block;
+}
+
+.menu a::after{
+  content: "";
+  width: 0;
+  height: 3px;
+  background-color: #fff;
+
+  will-change: width;
+  transition: width .1s ease-out;
+
+  position: absolute;
+  bottom: 0;
+}
+
+.menu a::before{
+  left: 50%;
+  transform: translateX(-50%); 
+}
+
+.menu a::after{
+  right: 50%;
+  transform: translateX(50%); 
+}
+
+.menu a:hover::before, 
+.menu a:hover::after{
+  width: 100%;
+  transition-duration: .2s;
+}
+
